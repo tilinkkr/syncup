@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light theme: warm white + safety yellow. Green = verified / OK, red = debunked / error. */
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  height: 100%;
+  background: #fafaf9;
+  color: #18181b; /* deep charcoal ink */
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #e4e4e7 transparent;
+}
+
+/* Yellow/white safety stripe used on the approval card */
+.hazard {
+  background: repeating-linear-gradient(-45deg, #facc15 0 10px, #fef9c3 10px 20px);
+}

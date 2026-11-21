@@ -1,0 +1,32 @@
+{
+  "LINE-03": {
+    "asset_name": "Bosch Pack-400 Packaging Line",
+    "aliases": ["line 3", "line-3", "line03", "packaging line", "pack-400"],
+    "maintenance_logs": [
+      {"log_id": "LOG-891", "date": "6 days ago", "component": "Main Gearbox",
+       "component_aliases": ["gearbox", "gear box", "gear-box", "main gear"],
+       "status": "HEALTHY - Newly Replaced"}
+    ],
+    "sop_rules": {
+      "E-04": {"fault": "Tripped Thermal Relay on Panel B",
+               "check_question": "Ask if the Thermal Relay LED on Panel B is glowing red",
+               "spare_part": "Part #TR-882 (Aisle 4, Bin B)",
+               "team": "Electrical & Controls Maintenance"}
+    }
+  },
+  "GATE-02": {
+    "asset_name": "Warehouse Dispatch Barcode Scanner",
+    "aliases": ["gate 2", "gate-2", "gate02", "scanner", "barcode scanner"],
+    "maintenance_logs": [
+      {"log_id": "LOG-904", "date": "Live Telemetry", "component": "Main Server Cluster SRV-BLR-01",
+       "component_aliases": ["server", "srv-blr-01", "server cluster", "backend", "network down"],
+       "status": "ONLINE - 99.98% Uptime"}
+    ],
+    "sop_rules": {
+      "NO_POWER": {"fault": "Faulty PoE Injector / Power Brick at Gate 2",
+                   "check_question": "Ask if the green power LED on the wall PoE adapter is off",
+                   "spare_part": "Part #POE-24V (IT Store Rack 2)",
+                   "team": "Warehouse IT & Infra"}
+    }
+  }
+}
